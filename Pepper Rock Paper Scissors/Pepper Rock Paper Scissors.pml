@@ -9,6 +9,7 @@
     <Resources>
         <File name="Pepper Rock Paper Scissors" src="Pepper Rock Paper Scissors/Pepper Rock Paper Scissors.pml" />
         <File name="manifest" src="Pepper Rock Paper Scissors/manifest.xml" />
+        <File name="surprise3" src="behavior_1/surprise3.ogg" />
     </Resources>
     <Topics />
     <IgnoredPaths />
