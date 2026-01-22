@@ -52,3 +52,13 @@ class MyClass(GeneratedClass):
         else:
             result = "I Win!"
           
+        self.SayText("You chose " + User + "I chose " + Pepper + " " + result)
+
+        if Pepper == "rock":
+            self.DoRock()
+        elif Pepper == "paper":
+            self.DoPaper()
+        else:
+            self.DoScissors()
+
+        self.PlayAgain()
