@@ -1,64 +1,65 @@
-from ipaddress import v4_int_to_packed
 import random
-from unittest import result
 
 class MyClass(GeneratedClass):
-    def __init__ (self):
+    def __init__(self):
         GeneratedClass.__init__(self)
 
-    def OnLoad(self):
+    def onLoad(self):
         pass
 
-    def OnUnload(self):
+    def onUnload(self):
         pass
-    
-    def OnInput_Start(self):
-        # Once head sensor is activates game starts
-        self.SayText("Lets play a game of Rock, Paper, Scissors!")
-        self.OnStopperd()
 
-    def OnInput_Stopped(self):
-        self.OnLoad()
-        self.OnUnload()
+    # Input: onStart (bang)
+    def onInput_onStart(self):
+        # Once head sensor is activated, game starts
+        self.sayText("Let's play Rock, Paper, Scissors! Say rock, paper, or scissors.")
+        self.playAgain()  # start listening
+        self.onStopped()
 
-    def OnInput_User(self, value):
-        # Speech, recognition, yes, no yes: starts the game | no: goes into standby
+    # Input: onStop (bang)
+    def onInput_onStop(self):
+        self.onUnload()
+        self.onStopped()
 
-        User = value
+    # Input: onUserMove (string)  connect Speech Reco wordRecognized here
+    def onInput_onUserMove(self, value):
+        user = value
+        # Speech Reco often sends word, confidence
+        if isinstance(value, (list, tuple)) and len(value) > 0:
+            user = value[0]
 
-        if isinstance (value, list) or isinstance(value, tuple):
-            User = value[0]
-        
-        User = str(User).lower().strip()
+        user = str(user).lower().strip()
 
-        if User in ["no", "stop"]:
-            self.SayText("Ok, Thank you")
-            self.End()
+        if user in ["no", "stop", "quit"]:
+            self.sayText("Okay, thank you. Bye!")
+            self.end()
             return
 
-        if User not in ["rock", "paper", "scissors"]:
-            self.SayText("Sorry, I didn't quire catch that. Please say rock, paper, or scissors.")
-            self.PlayAgain()
+        if user not in ["rock", "paper", "scissors"]:
+            self.sayText("Sorry, I didn't catch that. Please say rock, paper, or scissors.")
+            self.playAgain()
+            return
 
-        Pepper = random.choice(["rock", "paper", "scissors"])
+        pepper = random.choice(["rock", "paper", "scissors"])
 
-        if User == Pepper:
-            result = "It's a draw!"
-
-        elif (User == "rock" and Pepper == "scissors") or \
-             (User == "paper" and Pepper == "rock") or \
-             (User == "scissors" and Pepper == "scissors"):
-             result = "You win!"
+        if user == pepper:
+            outcome = "It's a draw!"
+        elif (user == "rock" and pepper == "scissors") or \
+             (user == "paper" and pepper == "rock") or \
+             (user == "scissors" and pepper == "paper"):
+            outcome = "You win!"
         else:
-            result = "I Win!"
-          
-        self.SayText("You chose " + User + "I chose " + Pepper + " " + result)
+            outcome = "I win!"
 
-        if Pepper == "rock":
-            self.DoRock()
-        elif Pepper == "paper":
-            self.DoPaper()
+        self.sayText("You chose " + user + ". I chose " + pepper + ". " + outcome)
+
+        # Trigger Pepper's chosen gesture
+        if pepper == "rock":
+            self.doRock()
+        elif pepper == "paper":
+            self.doPaper()
         else:
-            self.DoScissors()
+            self.doScissors()
 
-        self.PlayAgain()
+        self.playAgain()
