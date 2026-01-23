@@ -1,18 +1,17 @@
 import urllib
 
-class myclass(GeneratedClass):
+class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self)
         self.tablet = None
 
-        def onLoad(self):
-            try:
-                self.tablet = self.session.service("ALTabletService")
-            except:
-                self.tablet = None
+    def onLoad(self):
+        try:
+            self.tablet = self.session().service("ALTabletService")
+        except:
+            self.tablet = None
 
-
-   # Input: onScoreText (String)
+    # Input: onScoreText (String)
     def onInput_onScoreText(self, text):
         if not self.tablet:
             return

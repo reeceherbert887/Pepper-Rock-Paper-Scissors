@@ -7,6 +7,7 @@ class MyClass(GeneratedClass):
         self.userScore = 0
         self.pepperScore = 0
         self.roundsPlayed = 0
+        self.draw = 0
 
     # Input: onStart (bang)
     def onInput_onStart(self):
@@ -15,6 +16,7 @@ class MyClass(GeneratedClass):
         self.userScore = 0
         self.pepperScore = 0
         self.roundsPlayed = 0
+        self.draw = 0
         self.sayText("Would you like to play Rock, Paper, Scissors? Best of three. Please say yes or no.")
         self.onStopped()
 
@@ -23,8 +25,14 @@ class MyClass(GeneratedClass):
         self.onStopped()
 
     def onInput_onUserMove(self, value):
-        user = value[0] if isinstance(value, (list, tuple)) else value
-        user = str(user).lower().strip()
+        # Speech Reco often sends [word, confidence]
+        if isinstance(value, (list, tuple)) and len(value) >= 2:
+            user = str(value[0]).lower().strip()
+            conf = float(value[1])
+            if conf < 0.35:
+                return  # ignore weak recognition
+        else:
+            user = str(value).lower().strip()
 
         # Invitation stage
         if not self.gameStart:
@@ -34,7 +42,7 @@ class MyClass(GeneratedClass):
                 return
 
             elif user in ["no", "stop", "quit"]:
-                self.sayText("Okay, thank you. Goodbye.")
+                self.sayText("Goodebye")
                 self.end()
                 return
 
@@ -42,8 +50,13 @@ class MyClass(GeneratedClass):
                 self.sayText("Please say yes or no.")
                 return
 
+        #Game Mode
+        #this needs fixing
+       # if user in ["no", "stopt", "quit"]:
+        #    self.sayText("Goodbye")
+         #   self.end()
+          #  return
 
-        #Game mode
         if user not in ["rock", "paper", "scissors"]:
             self.sayText("Sorry, I didn't catch that. Please say rock, paper, or scissors.")
             return
@@ -51,7 +64,8 @@ class MyClass(GeneratedClass):
         pepper = random.choice(["rock", "paper", "scissors"])
         self.roundsPlayed += 1
 
-         # Decide outcome and update scores
+
+        # Decide outcome and update scores
         if user == pepper:
             outcome = "It's a draw."
             self.doDraw()
@@ -60,10 +74,12 @@ class MyClass(GeneratedClass):
              (user == "scissors" and pepper == "paper"):
             outcome = "You win this round."
             self.userScore += 1
+            self.draw += 1
             self.doSad()   # Pepper is sad because user won
         else:
             outcome = "I win this round."
             self.pepperScore += 1
+            self.draw += 1
             self.doHappy() # Pepper is happy because it won
 
         # Pepper shows its chosen move (gesture timeline)
@@ -75,13 +91,12 @@ class MyClass(GeneratedClass):
             self.doScissors()
 
         # Send to tablet UI
-        scoreLine = "round {}/3 | You: {} - Me: {}".format(self.roundsPlayed, self.userScore, self.pepperScore)
-
+        scoreLine = "Round {}/3 | You: {} - Me: {} Draw: {}".format(self.roundsPlayed, self.userScore, self.pepperScore, self.draw)
         self.scoreText(scoreLine)
 
         self.sayText("You chose {}. I chose {}. {} {}".format(user, pepper, outcome, scoreLine))
 
-         # Check match winner (first to 2 wins)
+        # Check match winner (first to 2 wins)
         if self.userScore >= 2 or self.pepperScore >= 2:
             if self.userScore > self.pepperScore:
                 self.sayText("Congratulations! You win the best of three.")
@@ -93,6 +108,7 @@ class MyClass(GeneratedClass):
             self.userScore = 0
             self.pepperScore = 0
             self.roundsPlayed = 0
+            self.draw = 0
 
             self.scoreText("Match finished. Say yes to play again, or no to quit.")
             self.sayText("Would you like to play again? Please say yes or no.")
