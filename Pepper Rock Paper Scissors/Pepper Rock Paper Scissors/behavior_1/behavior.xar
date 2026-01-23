@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?><ChoregrapheProject xmlns="http://www.aldebaran-robotics.com/schema/choregraphe/project.xsd" xar_version="3"><Box name="root" id="-1" localization="8" tooltip="Root box of Choregraphe&apos;s behavior. Highest level possible." x="0" y="0"><bitmap>media/images/box/root.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="0"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram><Box name="Paper_Timeline" id="6" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="683" y="201"><bitmap>media/images/box/movement/move.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="1" fps="1" start_frame="1" end_frame="-1" size="14"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram /></BehaviorKeyframe></BehaviorLayer><ActuatorList model=""><ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0"><Key frame="3" value="-54" /><Key frame="4" value="-8" /><Key frame="5" value="-54" /><Key frame="6" value="-8" /><Key frame="7" value="-54" /><Key frame="8" value="-8" /><Key frame="9" value="-54" /><Key frame="10" value="-8" /><Key frame="11" value="-54" /><Key frame="12" value="-8" /><Key frame="13" value="-7.2" /><Key frame="14" value="-8" /></ActuatorCurve><ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0"><Key frame="1" value="-80.4" /><Key frame="10" value="-75" /><Key frame="12" value="-75.5" /><Key frame="13" value="-1.5" /></ActuatorCurve><ActuatorCurve name="" actuator="LHand" mute="0" unit="1"><Key frame="1" value="0.98" /><Key frame="2" value="0.98" /><Key frame="3" value="0.98" /><Key frame="4" value="0.98" /><Key frame="5" value="0.98" /><Key frame="6" value="0.98" /><Key frame="7" value="0.98" /><Key frame="8" value="0.98" /><Key frame="9" value="0.98" /><Key frame="10" value="0.98" /><Key frame="11" value="0.98" /><Key frame="12" value="0.98" /><Key frame="13" value="0.98" /><Key frame="14" value="0.98" /></ActuatorCurve><ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0"><Key frame="2" value="-13.5" /></ActuatorCurve></ActuatorList></Timeline></Box><Box name="Scissors_Timeline" id="7" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="880" y="181"><bitmap>media/images/box/movement/move.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram /></BehaviorKeyframe></BehaviorLayer></Timeline></Box><Box name="Rock_Timeline" id="1" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="479" y="190"><bitmap>media/images/box/movement/move.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="1" fps="1" start_frame="1" end_frame="-1" size="14"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram /></BehaviorKeyframe></BehaviorLayer><ActuatorList model="juliette"><ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0"><Key frame="3" value="-54" /><Key frame="4" value="-8" /><Key frame="5" value="-54" /><Key frame="6" value="-8" /><Key frame="7" value="-54" /><Key frame="8" value="-8" /><Key frame="9" value="-54" /><Key frame="10" value="-8" /><Key frame="11" value="-54" /><Key frame="12" value="-8" /><Key frame="13" value="-54" /><Key frame="14" value="-8" /></ActuatorCurve><ActuatorCurve name="" actuator="LHand" mute="0" unit="1"><Key frame="1" value="0.98" /><Key frame="2" value="0.98" /><Key frame="3" value="0.98" /><Key frame="4" value="0.98" /><Key frame="5" value="0.98" /><Key frame="6" value="0.98" /><Key frame="7" value="0.98" /><Key frame="8" value="0.98" /><Key frame="9" value="0.98" /><Key frame="10" value="0.98" /><Key frame="11" value="0.98" /><Key frame="12" value="0.98" /><Key frame="13" value="0.98" /><Key frame="14" value="0.02" /></ActuatorCurve><ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0"><Key frame="2" value="-13.5" /></ActuatorCurve></ActuatorList></Timeline></Box><Box name="Speech Reco." id="9" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="829" y="776"><bitmap>media/images/box/interaction/ear.png</bitmap><script language="4"><content><![CDATA[
+<?xml version="1.0" encoding="UTF-8" ?><ChoregrapheProject xmlns="http://www.aldebaran-robotics.com/schema/choregraphe/project.xsd" xar_version="3"><Box name="root" id="-1" localization="8" tooltip="Root box of Choregraphe&apos;s behavior. Highest level possible." x="0" y="0"><bitmap>media/images/box/root.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="0"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram><Box name="Paper_Timeline" id="6" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="683" y="201"><bitmap>media/images/box/movement/move.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="1" fps="1" start_frame="1" end_frame="-1" size="14"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram /></BehaviorKeyframe></BehaviorLayer><ActuatorList model=""><ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0"><Key frame="3" value="-54" /><Key frame="4" value="-8" /><Key frame="5" value="-54" /><Key frame="6" value="-8" /><Key frame="7" value="-54" /><Key frame="8" value="-8" /><Key frame="9" value="-54" /><Key frame="10" value="-8" /><Key frame="11" value="-54" /><Key frame="12" value="-8" /><Key frame="13" value="-7.2" /><Key frame="14" value="-8" /></ActuatorCurve><ActuatorCurve name="" actuator="LElbowYaw" mute="0" unit="0"><Key frame="1" value="-80.4" /><Key frame="10" value="-75" /><Key frame="12" value="-75.5" /><Key frame="13" value="-1.5" /></ActuatorCurve><ActuatorCurve name="" actuator="LHand" mute="0" unit="1"><Key frame="1" value="0.98" /><Key frame="2" value="0.98" /><Key frame="3" value="0.98" /><Key frame="4" value="0.98" /><Key frame="5" value="0.98" /><Key frame="6" value="0.98" /><Key frame="7" value="0.98" /><Key frame="8" value="0.98" /><Key frame="9" value="0.98" /><Key frame="10" value="0.98" /><Key frame="11" value="0.98" /><Key frame="12" value="0.98" /><Key frame="13" value="0.98" /><Key frame="14" value="0.98" /></ActuatorCurve><ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0"><Key frame="2" value="-13.5" /></ActuatorCurve></ActuatorList></Timeline></Box><Box name="Scissors_Timeline" id="7" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="880" y="181"><bitmap>media/images/box/movement/move.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram /></BehaviorKeyframe></BehaviorLayer></Timeline></Box><Box name="Rock_Timeline" id="1" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="479" y="190"><bitmap>media/images/box/movement/move.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="1" fps="1" start_frame="1" end_frame="-1" size="14"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram /></BehaviorKeyframe></BehaviorLayer><ActuatorList model="juliette"><ActuatorCurve name="" actuator="LElbowRoll" mute="0" unit="0"><Key frame="3" value="-54" /><Key frame="4" value="-8" /><Key frame="5" value="-54" /><Key frame="6" value="-8" /><Key frame="7" value="-54" /><Key frame="8" value="-8" /><Key frame="9" value="-54" /><Key frame="10" value="-8" /><Key frame="11" value="-54" /><Key frame="12" value="-8" /><Key frame="13" value="-54" /><Key frame="14" value="-8" /></ActuatorCurve><ActuatorCurve name="" actuator="LHand" mute="0" unit="1"><Key frame="1" value="0.98" /><Key frame="2" value="0.98" /><Key frame="3" value="0.98" /><Key frame="4" value="0.98" /><Key frame="5" value="0.98" /><Key frame="6" value="0.98" /><Key frame="7" value="0.98" /><Key frame="8" value="0.98" /><Key frame="9" value="0.98" /><Key frame="10" value="0.98" /><Key frame="11" value="0.98" /><Key frame="12" value="0.98" /><Key frame="13" value="0.98" /><Key frame="14" value="0.02" /></ActuatorCurve><ActuatorCurve name="" actuator="LShoulderPitch" mute="0" unit="0"><Key frame="2" value="-13.5" /></ActuatorCurve></ActuatorList></Timeline></Box><Box name="Speech Reco." id="9" localization="8" tooltip="Recognize a word from a list of words set in the box parameters.&#x0A;&#x0A;V1.1.0&#x0A;" x="1086" y="141"><bitmap>media/images/box/interaction/ear.png</bitmap><script language="4"><content><![CDATA[
 
 class MyClass(GeneratedClass):
     def __init__(self):
@@ -64,7 +64,7 @@ class MyClass(GeneratedClass):
         if(len(value) > 1 and value[1] >= self.getParameter("Confidence threshold (%)")/100.):
             self.wordRecognized(value[0]) #~ activate output of the box
         else:
-            self.onNothing()]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Output name="wordRecognized" type="3" type_size="1" nature="2" inner="0" tooltip="Word recognized with a confidence higher than the threshold set in the box parameters." id="5" /><Output name="onNothing" type="1" type_size="1" nature="2" inner="0" tooltip="Nothing has been understood." id="6" /><Parameter name="Word list" inherits_from_parent="0" content_type="3" value="yes;rock;paper;scissors;quit;stop" default_value="yes;no" custom_choice="0" tooltip="Try to recognize a word from a list of words set in the box parameters." id="7" /><Parameter name="Confidence threshold (%)" inherits_from_parent="0" content_type="1" value="40" default_value="30" min="0" max="100" tooltip="If the confidence associated with the word recognized is below this threshold, the robot will consider that it is not recognized." id="8" /><Parameter name="Visual expression" inherits_from_parent="0" content_type="0" value="1" default_value="1" tooltip="Use the LEDs to show feedbacks from the robot during the recognition.&#x0A;&#x0A;For example:&#x0A;- Eyes leds get blue and turn when the speech recognition is launched.&#x0A;- They get yellow when the robot hears someone talking and analyses what it heard.&#x0A;- They flash in green when the robot understood and flash in red otherwise." id="9" /><Parameter name="Enable word spotting" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="If this option is not activated the robot will only understand exact expressions. If it is, he will spot the exact expressions even in the middle of a sentence.&#x0A;&#x0A;!!Warning!! This option is only available with the speech recognition module using Nuance (ie in Atom version of the robot)." id="10" /><Resource name="Speech recognition" type="Lock" timeout="0" /></Box><Box name="Tactile Head" id="3" localization="8" tooltip="Detect touch on head tactile sensor." x="77" y="6"><bitmap>media/images/box/sensors/tactileHead.png</bitmap><script language="4"><content><![CDATA[class MyClass(GeneratedClass):
+            self.onNothing()]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Output name="wordRecognized" type="3" type_size="1" nature="2" inner="0" tooltip="Word recognized with a confidence higher than the threshold set in the box parameters." id="5" /><Output name="onNothing" type="1" type_size="1" nature="2" inner="0" tooltip="Nothing has been understood." id="6" /><Parameter name="Word list" inherits_from_parent="0" content_type="3" value="yes;no;rock;paper;scissors;quit;stop" default_value="yes;no" custom_choice="0" tooltip="Try to recognize a word from a list of words set in the box parameters." id="7" /><Parameter name="Confidence threshold (%)" inherits_from_parent="0" content_type="1" value="35" default_value="30" min="0" max="100" tooltip="If the confidence associated with the word recognized is below this threshold, the robot will consider that it is not recognized." id="8" /><Parameter name="Visual expression" inherits_from_parent="0" content_type="0" value="1" default_value="1" tooltip="Use the LEDs to show feedbacks from the robot during the recognition.&#x0A;&#x0A;For example:&#x0A;- Eyes leds get blue and turn when the speech recognition is launched.&#x0A;- They get yellow when the robot hears someone talking and analyses what it heard.&#x0A;- They flash in green when the robot understood and flash in red otherwise." id="9" /><Parameter name="Enable word spotting" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="If this option is not activated the robot will only understand exact expressions. If it is, he will spot the exact expressions even in the middle of a sentence.&#x0A;&#x0A;!!Warning!! This option is only available with the speech recognition module using Nuance (ie in Atom version of the robot)." id="10" /><Resource name="Speech recognition" type="Lock" timeout="0" /></Box><Box name="Tactile Head" id="3" localization="8" tooltip="Detect touch on head tactile sensor." x="77" y="6"><bitmap>media/images/box/sensors/tactileHead.png</bitmap><script language="4"><content><![CDATA[class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self, False)
 
@@ -143,71 +143,119 @@ class MyClass(GeneratedClass):
 class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self)
-        self.game_started = False  # state flag
-
-    def onLoad(self):
-        pass
-
-    def onUnload(self):
-        pass
+        self.gameStart = False
+        self.userScore = 0
+        self.pepperScore = 0
+        self.roundsPlayed = 0
+        self.draw = 0
 
     # Input: onStart (bang)
     def onInput_onStart(self):
-        self.game_started = False
-        self.sayText("Would you like to play a game?")
+        # Once head sensor is activated, game starts
+        self.gameStart = False
+        self.userScore = 0
+        self.pepperScore = 0
+        self.roundsPlayed = 0
+        self.draw = 0
+        self.sayText("Would you like to play Rock, Paper, Scissors? Best of three. Please say yes or no.")
         self.onStopped()
 
     # Input: onStop (bang)
     def onInput_onStop(self):
-        self.onUnload()
         self.onStopped()
 
-    # Input: onUserMove (string)
     def onInput_onUserMove(self, value):
-        user = value
-        if isinstance(value, (list, tuple)) and len(value) > 0:
-            user = value[0]
+        # Speech Reco often sends [word, confidence]
+        if isinstance(value, (list, tuple)) and len(value) >= 2:
+            user = str(value[0]).lower().strip()
+            conf = float(value[1])
+            if conf < 0.35:
+                return  # ignore weak recognition
+        else:
+            user = str(value).lower().strip()
 
-        user = str(user).lower().strip()
-
-        # --- Invitation stage ---
-        if not self.game_started:
+        # Invitation stage
+        if not self.gameStart:
             if user == "yes":
-                self.game_started = True
+                self.gameStart = True
                 self.sayText("Okay, let's begin. Please say rock, paper, or scissors.")
                 return
+
             elif user in ["no", "stop", "quit"]:
-                self.sayText("Okay, thank you. Goodbye.")
+                self.sayText("Goodebye")
                 self.end()
                 return
+
             else:
                 self.sayText("Please say yes or no.")
                 return
 
-        # --- Game stage ---
+        #Game Mode
+        #this needs fixing
+       # if user in ["no", "stopt", "quit"]:
+        #    self.sayText("Goodbye")
+         #   self.end()
+          #  return
+
         if user not in ["rock", "paper", "scissors"]:
             self.sayText("Sorry, I didn't catch that. Please say rock, paper, or scissors.")
             return
 
         pepper = random.choice(["rock", "paper", "scissors"])
+        self.roundsPlayed += 1
 
+
+        # Decide outcome and update scores
         if user == pepper:
-            outcome = "It's a draw!"
+            outcome = "It's a draw."
+            self.doDraw()
         elif (user == "rock" and pepper == "scissors") or \
              (user == "paper" and pepper == "rock") or \
              (user == "scissors" and pepper == "paper"):
-            outcome = "You win!"
+            outcome = "You win this round."
+            self.userScore += 1
+            self.draw += 1
+            self.doSad()   # Pepper is sad because user won
         else:
-            outcome = "I win!"
+            outcome = "I win this round."
+            self.pepperScore += 1
+            self.draw += 1
+            self.doHappy() # Pepper is happy because it won
 
-        self.sayText("You chose " + user + ". I chose " + pepper + ". " + outcome)
-
+        # Pepper shows its chosen move (gesture timeline)
         if pepper == "rock":
             self.doRock()
         elif pepper == "paper":
             self.doPaper()
         else:
-            self.doScissors()]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Input name="onUserMove" type="3" type_size="1" nature="1" inner="0" tooltip="" id="4" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="5" /><Output name="doRock" type="1" type_size="1" nature="2" inner="0" tooltip="" id="6" /><Output name="doPaper" type="1" type_size="1" nature="2" inner="0" tooltip="" id="7" /><Output name="doScissors" type="1" type_size="1" nature="2" inner="0" tooltip="" id="8" /><Output name="playAgain" type="1" type_size="1" nature="2" inner="0" tooltip="" id="9" /><Output name="end" type="1" type_size="1" nature="2" inner="0" tooltip="" id="10" /><Output name="sayText" type="3" type_size="1" nature="2" inner="0" tooltip="" id="11" /></Box><Box name="Animated Say Text" id="4" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="748" y="43"><bitmap>media/images/box/interaction/say.png</bitmap><script language="4"><content><![CDATA[import time
+            self.doScissors()
+
+        # Send to tablet UI
+        scoreLine = "Round {}/3 | You: {} - Me: {} Draw: {}".format(self.roundsPlayed, self.userScore, self.pepperScore, self.draw)
+        self.scoreText(scoreLine)
+
+        self.sayText("You chose {}. I chose {}. {} {}".format(user, pepper, outcome, scoreLine))
+
+        # Check match winner (first to 2 wins)
+        if self.userScore >= 2 or self.pepperScore >= 2:
+            if self.userScore > self.pepperScore:
+                self.sayText("Congratulations! You win the best of three.")
+            else:
+                self.sayText("I win the best of three. Better luck next time.")
+
+            # Reset to invite stage (play again)
+            self.gameStart = False
+            self.userScore = 0
+            self.pepperScore = 0
+            self.roundsPlayed = 0
+            self.draw = 0
+
+            self.scoreText("Match finished. Say yes to play again, or no to quit.")
+            self.sayText("Would you like to play again? Please say yes or no.")
+            return
+
+        # Continue
+        self.sayText("Next round. Please say rock, paper, or scissors.")]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Input name="onUserMove" type="3" type_size="1" nature="1" inner="0" tooltip="" id="4" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="5" /><Output name="doRock" type="1" type_size="1" nature="2" inner="0" tooltip="" id="6" /><Output name="doPaper" type="1" type_size="1" nature="2" inner="0" tooltip="" id="7" /><Output name="doScissors" type="1" type_size="1" nature="2" inner="0" tooltip="" id="8" /><Output name="sayText" type="3" type_size="1" nature="2" inner="0" tooltip="" id="9" /><Output name="doHappy" type="1" type_size="1" nature="2" inner="0" tooltip="" id="10" /><Output name="doSad" type="1" type_size="1" nature="2" inner="0" tooltip="" id="11" /><Output name="doDraw" type="1" type_size="1" nature="2" inner="0" tooltip="" id="12" /><Output name="scoreText" type="3" type_size="1" nature="2" inner="0" tooltip="" id="13" /><Output name="end" type="1" type_size="1" nature="2" inner="0" tooltip="" id="14" /></Box><Box name="Animated Say Text" id="4" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="731" y="41"><bitmap>media/images/box/interaction/say.png</bitmap><script language="4"><content><![CDATA[import time
 
 class MyClass(GeneratedClass):
     def __init__(self):
@@ -249,4 +297,166 @@ class MyClass(GeneratedClass):
                 self.bIsRunning = False
 
     def onInput_onStop(self):
-        self.onUnload()]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" /><Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" /><Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" /><Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" /><Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="random" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7"><Choice value="disabled" /><Choice value="random" /><Choice value="contextual" /></Parameter></Box><Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" /><Link inputowner="11" indexofinput="2" outputowner="3" indexofoutput="9" /><Link inputowner="1" indexofinput="2" outputowner="11" indexofoutput="6" /><Link inputowner="6" indexofinput="2" outputowner="11" indexofoutput="7" /><Link inputowner="7" indexofinput="2" outputowner="11" indexofoutput="8" /><Link inputowner="11" indexofinput="4" outputowner="9" indexofoutput="5" /><Link inputowner="9" indexofinput="2" outputowner="4" indexofoutput="4" /><Link inputowner="4" indexofinput="2" outputowner="11" indexofoutput="11" /></Diagram></BehaviorKeyframe></BehaviorLayer></Timeline></Box></ChoregrapheProject>
+        self.onUnload()]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" /><Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" /><Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" /><Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" /><Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="random" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7"><Choice value="disabled" /><Choice value="random" /><Choice value="contextual" /></Parameter></Box><Box name="Happy_Timeline" id="12" localization="8" tooltip="ID : #02A 0001&#x0A;&#x0A;===================&#x0A;&#x0A;Tags : &#x0A;- Happy" x="484" y="309"><bitmap>media/images/box/movement/move.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="87"><ActuatorList model=""><ActuatorCurve name="value" actuator="HeadPitch" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="-15" /><Key frame="23" value="-8.48092" /><Key frame="27" value="-12.3871" /><Key frame="31" value="-10.217" /><Key frame="36" value="-15" /><Key frame="40" value="-8.26391" /><Key frame="44" value="-12.1701" /><Key frame="48" value="-10" /><Key frame="54" value="-15" /><Key frame="58" value="-8.26391" /><Key frame="62" value="-12.1701" /><Key frame="66" value="-10" /><Key frame="71" value="-15" /><Key frame="75" value="-10.676" /><Key frame="87" value="-11.5137" /></ActuatorCurve><ActuatorCurve name="value" actuator="HeadYaw" mute="0" alwaysVisible="1" unit="0"><Key frame="15" value="-0.615236" /><Key frame="24" value="2" /><Key frame="40" value="-2" /><Key frame="58" value="2" /><Key frame="74" value="-2" /><Key frame="87" value="-0.175782" /></ActuatorCurve><ActuatorCurve name="value" actuator="HipPitch" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="-10.1" /><Key frame="84" value="-2.02149" /><Key frame="87" value="-1.84571" /></ActuatorCurve><ActuatorCurve name="value" actuator="HipRoll" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="5" /><Key frame="36" value="-5" /><Key frame="54" value="5" /><Key frame="71" value="-5" /><Key frame="84" value="-0.0878909" /><Key frame="87" value="0.175782" /></ActuatorCurve><ActuatorCurve name="value" actuator="KneePitch" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="3.5" /><Key frame="84" value="-0.175782" /><Key frame="87" value="0.351564" /></ActuatorCurve><ActuatorCurve name="value" actuator="LElbowRoll" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="-53" /><Key frame="28" value="-38.4" /><Key frame="36" value="-61.1" /><Key frame="45" value="-38.4" /><Key frame="54" value="-53" /><Key frame="63" value="-38.4" /><Key frame="71" value="-61.1" /><Key frame="79" value="-38.4" /><Key frame="87" value="-29.9707" /></ActuatorCurve><ActuatorCurve name="value" actuator="LElbowYaw" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="-63.5" /><Key frame="36" value="-100.538" /><Key frame="54" value="-63.5" /><Key frame="71" value="-100.538" /><Key frame="87" value="-70.4883" /></ActuatorCurve><ActuatorCurve name="value" actuator="LHand" mute="0" alwaysVisible="1" unit="1"><Key frame="20" value="0.020089" /><Key frame="28" value="0.34" /><Key frame="36" value="0.173538" /><Key frame="45" value="0.34" /><Key frame="54" value="0.020089" /><Key frame="63" value="0.34" /><Key frame="71" value="0.173538" /><Key frame="79" value="0.34" /><Key frame="87" value="0.582601" /></ActuatorCurve><ActuatorCurve name="value" actuator="LShoulderPitch" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="75.4" /><Key frame="36" value="101.5" /><Key frame="54" value="75.4" /><Key frame="71" value="101.5" /><Key frame="87" value="89.3848" /></ActuatorCurve><ActuatorCurve name="value" actuator="LShoulderRoll" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="14.8" /><Key frame="36" value="14.4" /><Key frame="54" value="14.8" /><Key frame="71" value="14.4" /><Key frame="87" value="8.17382" /></ActuatorCurve><ActuatorCurve name="value" actuator="LWristYaw" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="-6.39955" /><Key frame="36" value="0.723418" /><Key frame="54" value="-6.39955" /><Key frame="71" value="0.723418" /><Key frame="87" value="0.876518" /></ActuatorCurve><ActuatorCurve name="value" actuator="RElbowRoll" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="61.1" /><Key frame="28" value="39.8" /><Key frame="36" value="53" /><Key frame="45" value="39.8" /><Key frame="54" value="61.1" /><Key frame="63" value="39.8" /><Key frame="71" value="53" /><Key frame="79" value="39.8" /><Key frame="87" value="29.9707" /></ActuatorCurve><ActuatorCurve name="value" actuator="RElbowYaw" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="100.538" /><Key frame="36" value="63.5" /><Key frame="54" value="100.538" /><Key frame="71" value="63.5" /><Key frame="87" value="70.1367" /></ActuatorCurve><ActuatorCurve name="value" actuator="RHand" mute="0" alwaysVisible="1" unit="1"><Key frame="20" value="0.173538" /><Key frame="28" value="0.29" /><Key frame="36" value="0.020089" /><Key frame="45" value="0.29" /><Key frame="54" value="0.173538" /><Key frame="63" value="0.29" /><Key frame="71" value="0.020089" /><Key frame="79" value="0.29" /><Key frame="87" value="0.585237" /></ActuatorCurve><ActuatorCurve name="value" actuator="RShoulderPitch" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="101.5" /><Key frame="36" value="75.4" /><Key frame="54" value="101.5" /><Key frame="71" value="75.4" /><Key frame="87" value="89.1211" /></ActuatorCurve><ActuatorCurve name="value" actuator="RShoulderRoll" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="-14.4" /><Key frame="36" value="-14.8" /><Key frame="54" value="-14.4" /><Key frame="71" value="-14.8" /><Key frame="87" value="-8.34961" /></ActuatorCurve><ActuatorCurve name="value" actuator="RWristYaw" mute="0" alwaysVisible="1" unit="0"><Key frame="20" value="-0.723418" /><Key frame="36" value="6.39955" /><Key frame="54" value="-0.723418" /><Key frame="71" value="6.39955" /><Key frame="87" value="0.788627" /></ActuatorCurve></ActuatorList></Timeline><Resource name="Standing" type="Lock" timeout="1" /><Resource name="All motors" type="Lock" timeout="1" /></Box><Box name="Sad_Timeline" id="14" localization="8" tooltip="ID : #02B 0001&#x0A;&#x0A;===================&#x0A;&#x0A;Tags : &#x0A;- Thinking" x="691" y="328"><bitmap>media/images/box/movement/move.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="140"><ActuatorList model=""><ActuatorCurve name="value" actuator="HeadPitch" mute="0" unit="0"><Key frame="19" value="-6.5" /><Key frame="31" value="12.8913" /><Key frame="80" value="11.5" /><Key frame="119" value="13.8" /><Key frame="131" value="7.2" /><Key frame="140" value="-11.9668" /></ActuatorCurve><ActuatorCurve name="value" actuator="HeadYaw" mute="0" unit="0"><Key frame="31" value="8.87482" /><Key frame="119" value="9.00008" /><Key frame="140" value="-17.4791" /></ActuatorCurve><ActuatorCurve name="value" actuator="HipPitch" mute="0" unit="0"><Key frame="15" value="-2.34809" /><Key frame="31" value="-12.3926" /><Key frame="105" value="-19.9512" /><Key frame="128" value="-2.48279" /></ActuatorCurve><ActuatorCurve name="value" actuator="HipRoll" mute="0" unit="0"><Key frame="15" value="0" /><Key frame="31" value="-3.25195" /><Key frame="105" value="-2.02149" /><Key frame="128" value="-0.197286" /></ActuatorCurve><ActuatorCurve name="value" actuator="KneePitch" mute="0" unit="0"><Key frame="15" value="-0.634643" /><Key frame="31" value="1.66993" /><Key frame="105" value="4.30664" /><Key frame="128" value="-0.742038" /></ActuatorCurve><ActuatorCurve name="value" actuator="LElbowRoll" mute="0" unit="0"><Key frame="17" value="-45.8" /><Key frame="29" value="-85.0768" /><Key frame="117" value="-86.9" /><Key frame="129" value="-87.9" /><Key frame="138" value="-78.9185" /></ActuatorCurve><ActuatorCurve name="value" actuator="LElbowYaw" mute="0" unit="0"><Key frame="17" value="-80.4" /><Key frame="29" value="-54.7589" /><Key frame="117" value="-52.1" /><Key frame="138" value="-88.7261" /></ActuatorCurve><ActuatorCurve name="value" actuator="LHand" mute="0" unit="1"><Key frame="17" value="0.96" /><Key frame="29" value="0.7036" /><Key frame="43" value="0.44" /><Key frame="53" value="0.73" /><Key frame="68" value="0.44" /><Key frame="78" value="0.73" /><Key frame="95" value="0.44" /><Key frame="105" value="0.73" /><Key frame="117" value="0.65" /><Key frame="129" value="0.52" /><Key frame="138" value="0.844074" /></ActuatorCurve><ActuatorCurve name="value" actuator="LShoulderPitch" mute="0" unit="0"><Key frame="29" value="-29.3582" /><Key frame="117" value="-33.3" /><Key frame="129" value="5.7" /><Key frame="138" value="25.2371" /></ActuatorCurve><ActuatorCurve name="value" actuator="LShoulderRoll" mute="0" unit="0"><Key frame="29" value="18.8064" /><Key frame="117" value="19.6" /><Key frame="138" value="13.4" /></ActuatorCurve><ActuatorCurve name="value" actuator="LWristYaw" mute="0" unit="0"><Key frame="17" value="-51.3" /><Key frame="29" value="-47.7276" /><Key frame="117" value="-49.4001" /><Key frame="138" value="1.10055" /></ActuatorCurve><ActuatorCurve name="value" actuator="RElbowRoll" mute="0" unit="0"><Key frame="15" value="32.9" /><Key frame="27" value="21.8875" /><Key frame="115" value="11.6895" /><Key frame="127" value="21.5" /><Key frame="136" value="14.8333" /></ActuatorCurve><ActuatorCurve name="value" actuator="RElbowYaw" mute="0" unit="0"><Key frame="15" value="84.7" /><Key frame="27" value="70.7504" /><Key frame="115" value="70.8398" /><Key frame="136" value="69.9984" /></ActuatorCurve><ActuatorCurve name="value" actuator="RHand" mute="0" unit="1"><Key frame="15" value="0.54" /><Key frame="27" value="0.3504" /><Key frame="115" value="0.510545" /><Key frame="127" value="0.31" /><Key frame="136" value="0.412984" /></ActuatorCurve><ActuatorCurve name="value" actuator="RShoulderPitch" mute="0" unit="0"><Key frame="27" value="88.6852" /><Key frame="115" value="78.3984" /><Key frame="136" value="82.2228" /></ActuatorCurve><ActuatorCurve name="value" actuator="RShoulderRoll" mute="0" unit="0"><Key frame="27" value="-6.24271" /><Key frame="115" value="-4.92188" /><Key frame="136" value="-6.87545" /></ActuatorCurve><ActuatorCurve name="value" actuator="RWristYaw" mute="0" unit="0"><Key frame="15" value="28.5" /><Key frame="27" value="1.75543" /><Key frame="115" value="5.35899" /><Key frame="136" value="-1.90004" /></ActuatorCurve></ActuatorList></Timeline><Resource name="Standing" type="Lock" timeout="1" /><Resource name="All motors" type="Lock" timeout="1" /></Box><Box name="Draw_Timeline" id="17" localization="8" tooltip="ID : #02C 0001&#x0A;&#x0A;===================&#x0A;&#x0A;Tags : &#x0A;- Fear" x="880" y="330"><bitmap>media/images/box/movement/move.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="107"><BehaviorLayer name="LED"><BehaviorKeyframe name="FaceLeds1" index="1"><Diagram scale="100"><Box name="Light_NeutralAndZenEyes" id="1" localization="8" tooltip="Set A Neutral Animated Gaze&#x0A;*** state: se/Leds/Light_NeutralAndZenEyes/Light_NeutralAndZenEyes.x ***&#x0A;*** ref box in: .//5a_release/Leds/Light_NeutralAndZenEyes/Light_NeutralAndZenEyes.xar ***&#x0A;*** last modification date(svn): 2009-04-17 14:01:23 +0200 ***" x="176" y="93"><bitmap>media/images/box/interaction/LED.png</bitmap><script language="4"><content><![CDATA[class MyClass(GeneratedClass):
+  def __init__(self):
+    GeneratedClass.__init__(self);
+    self.bMustStop = False;
+    self.bIsRunning = False;
+
+  def onUnload(self):
+    self.onInput_onStop(); # will stop current loop execution
+
+  def onInput_onStart(self):
+    #self.log( self.getName() + ": start - begin" );
+
+    if( self.bIsRunning ):
+      #print( self.getName() + ": already started => nothing" );
+      return;
+
+    self.bIsRunning = True;
+    self.bMustStop = False;
+
+    rDuration = 1.0;
+    ALLeds.post.fadeRGB( "FaceLeds", 0x00ff00, rDuration );
+
+    while( not self.bMustStop ):
+      rTime=1.0
+      ALLeds.fadeRGB( "FaceLedsTop", 0x000000, rTime );
+      if( self.bMustStop ):
+        break;
+      ALLeds.fadeRGB( "FaceLedsTop", 0x00ff00, rTime );
+    # end while
+    self.bIsRunning = False;
+    self.onStopped();
+
+  def onInput_onStop(self):
+    self.bMustStop = True; # will stop current loop execution]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /></Box><Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" /></Diagram></BehaviorKeyframe><BehaviorKeyframe name="FaceLeds2" index="11"><Diagram scale="100"><Box name="Light_SurprisedEyes" id="1" localization="8" tooltip="Set An Animated Gaze Which Expresses Surprise&#x0A;*** state: se/Leds/Light_SurprisedEyes/Light_SurprisedEyes.x ***&#x0A;*** ref box in: .//5a_release/Leds/Light_SurprisedEyes/Light_SurprisedEyes.xar ***&#x0A;*** last modification date(svn): 2009-04-17 14:01:23 +0200 ***" x="133" y="78"><bitmap>media/images/box/interaction/LED.png</bitmap><script language="4"><content><![CDATA[class MyClass(GeneratedClass):
+  def __init__(self):
+    GeneratedClass.__init__(self);
+    self.bMustStop = False;
+    self.bIsRunning = False;
+
+  def onUnload(self):
+    self.onInput_onStop(); # will stop current loop execution
+
+  def onInput_onStart(self):
+    #self.log( self.getName() + ": start - begin" );
+
+    if( self.bIsRunning ):
+      #print( self.getName() + ": already started => nothing" );
+      return;
+
+    self.bIsRunning = True;
+    self.bMustStop = False;
+
+    rDuration = 0.3;
+    ALLeds.post.fadeRGB( "FaceLedsTop", 0x000000, rDuration );
+    ALLeds.post.fadeRGB( "FaceLedsInternal", 0xffff00, rDuration );
+    ALLeds.post.fadeRGB( "FaceLedsBottom", 0x000000, rDuration );
+    ALLeds.fadeRGB( "FaceLedsExternal", 0xffff00, rDuration );
+
+    while( not self.bMustStop ):
+      rTime=0.2
+      ALLeds.post.fadeRGB( "FaceLed7", 0x000000, rTime );
+      ALLeds.fadeRGB( "FaceLed4", 0x000000, rTime );
+      if( self.bMustStop ):
+        break;
+      ALLeds.post.fadeRGB( "FaceLed7", 0xffff00, rTime );
+      ALLeds.fadeRGB( "FaceLed4", 0xffff00, rTime );
+
+    # end while
+    self.bIsRunning = False;
+    self.onStopped();
+
+  def onInput_onStop(self):
+    self.bMustStop = True; # will stop current loop execution]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /></Box><Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="1" /></Diagram></BehaviorKeyframe></BehaviorLayer><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe11" index="11"><Diagram><Box name="Play Sound" id="4" localization="8" tooltip="Play a sound file. Select the file in parameters. The format of the file can be&#x0A;wav, mp3, or ogg." x="115" y="43"><bitmap>media/images/box/interaction/play_music.png</bitmap><script language="4"><content><![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        self.bIsRunning = False
+
+    def onUnload(self):
+        self.bIsRunning = False
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+
+    def onInput_onStop(self):
+        if( self.bIsRunning ):
+            self.onUnload()
+            self.onStopped()]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Starts the music." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Stops the music." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished or stopped." id="4" /><Parameter name="File path" inherits_from_parent="0" content_type="4" value="/surprise3.ogg" default_value="" tooltip="Path of the file (including its name) which is going to be sent on the box output.&#x0A;&#x0A;Note: You can click on the folder icon to browse the project resources and import&#x0A;files in the resources." id="5" /><Parameter name="Begin position (s)" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="0" max="600" tooltip="Position in seconds where the playing must start." id="6" /><Parameter name="Volume (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="0" max="100" tooltip="Volume the file is played with." id="7" /><Parameter name="Panorama" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="-1" max="1" tooltip="Value which determines if the sound is played more on NAO&apos;s left or right.&#x0A;You can particularly set it to:&#x0A;- -1 to play only on the left loudspeaker.&#x0A;- 0 to play on both loudspeakers.&#x0A;- 1 to play only on the right loudspeaker." id="8" /><Parameter name="Play in loop" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="This parameter allows to play the file in loop. The playing will start each time at&#x0A;the beginning of the file." id="9" /><Timeline enable="0"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram><Box name="Play Sound File" id="2" localization="8" tooltip="Play the sound." x="442" y="70"><bitmap>media/images/box/interaction/play_music.png</bitmap><script language="4"><content><![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+        self.player = ALProxy('ALAudioPlayer')
+        self.playerStop = ALProxy('ALAudioPlayer', True) #Create another proxy as wait is blocking if audioout is remote
+
+    def onLoad(self):
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.playerStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            if (self.getParameter("Play in loop")) :
+               id = self.player.post.playFileInLoop(p,self.getParameter("Volume (%)")/100.,self.getParameter("Panorama"))
+            else :
+               id = self.player.post.playFileFromPosition(p,self.getParameter("Begin position (s)"),self.getParameter("Volume (%)")/100.,self.getParameter("Panorama"))
+            self.ids.append(id)
+            self.player.wait(id, 0)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" /><Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" /><Parameter name="Begin position (s)" inherits_from_parent="1" content_type="2" value="0" default_value="0" min="0" max="600" tooltip="Position in seconds where the playing must start." id="5" /><Parameter name="Volume (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="0" max="100" tooltip="Volume the file is played with." id="6" /><Parameter name="Panorama" inherits_from_parent="1" content_type="2" value="0" default_value="0" min="-1" max="1" tooltip="Value which determines if the sound is played more on NAO&apos;s left or right.&#x0A;You can particularly set it to:&#x0A;- -1 to play only on the left loudspeaker.&#x0A;- 0 to play on both loudspeakers.&#x0A;- 1 to play only on the right loudspeaker." id="7" /><Parameter name="Play in loop" inherits_from_parent="1" content_type="0" value="0" default_value="0" tooltip="This parameter allows to play the file in loop. The playing will start each time at&#x0A;the beginning of the file." id="8" /><Resource name="Audio player" type="Stop on demand" timeout="0" /></Box><Box name="Get File Path" id="1" localization="8" tooltip="Use this box to choose a resource file in its parameters. The filepath will be sent on&#x0A;the output when the input is stimulated." x="216" y="71"><bitmap>media/images/box/folder.png</bitmap><script language="4"><content><![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+    def onInput_onStart(self):
+        self.onStopped(self.behaviorAbsolutePath() + self.getParameter("File path"))]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the filepath on the output." id="2" /><Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The filepath of the selected resource file." id="3" /><Parameter name="File path" inherits_from_parent="1" content_type="4" value="" default_value="" tooltip="Path of the file (including its name) which is going to be sent on the box output.&#x0A;&#x0A;Note: You can click on the folder icon to browse the project resources and import&#x0A;files in the resources." id="4" /></Box><Link inputowner="0" indexofinput="4" outputowner="2" indexofoutput="4" /><Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" /><Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="3" /></Diagram></BehaviorKeyframe></BehaviorLayer></Timeline></Box><Link inputowner="4" indexofinput="2" outputowner="0" indexofoutput="1" /></Diagram></BehaviorKeyframe></BehaviorLayer><ActuatorList model=""><ActuatorCurve name="value" actuator="HeadPitch" mute="0" unit="0"><Key frame="12" value="-8.07496" /><Key frame="27" value="-8.60226" /><Key frame="32" value="-6.93236" /><Key frame="40" value="-6.93236" /><Key frame="45" value="-14.8427" /><Key frame="55" value="-14.8427" /><Key frame="59" value="-8.51446" /><Key frame="73" value="-8.51446" /><Key frame="77" value="-6.93236" /><Key frame="85" value="-6.93236" /><Key frame="90" value="-8.25076" /><Key frame="107" value="-12.1315" /></ActuatorCurve><ActuatorCurve name="value" actuator="HeadYaw" mute="0" unit="0"><Key frame="12" value="6.41369" /><Key frame="27" value="6.85315" /><Key frame="32" value="-26.1062" /><Key frame="40" value="-26.1062" /><Key frame="45" value="-11.9557" /><Key frame="55" value="-11.9557" /><Key frame="59" value="7.90785" /><Key frame="73" value="7.90785" /><Key frame="77" value="-26.1062" /><Key frame="85" value="-26.1062" /><Key frame="90" value="-0.00240423" /><Key frame="107" value="0.349163" /></ActuatorCurve><ActuatorCurve name="value" actuator="HipPitch" mute="0" unit="0"><Key frame="15" value="-8.4375" /><Key frame="23" value="-8.4375" /><Key frame="103" value="-2.02149" /></ActuatorCurve><ActuatorCurve name="value" actuator="HipRoll" mute="0" unit="0"><Key frame="15" value="-0.263673" /><Key frame="23" value="-0.263673" /><Key frame="32" value="2.2" /><Key frame="33" value="3.1" /><Key frame="37" value="3.1" /><Key frame="46" value="0" /><Key frame="49" value="0" /><Key frame="60" value="-4.1" /><Key frame="69" value="-4.1" /><Key frame="80" value="2" /><Key frame="103" value="-0.439454" /></ActuatorCurve><ActuatorCurve name="value" actuator="KneePitch" mute="0" unit="0"><Key frame="15" value="-1.31836" /><Key frame="23" value="-1.31836" /><Key frame="103" value="-0.527345" /></ActuatorCurve><ActuatorCurve name="value" actuator="LElbowRoll" mute="0" unit="0"><Key frame="11" value="-31.4628" /><Key frame="82" value="-26.2772" /><Key frame="103" value="-30.496" /></ActuatorCurve><ActuatorCurve name="value" actuator="LElbowYaw" mute="0" unit="0"><Key frame="11" value="-115.844" /><Key frame="82" value="-119.535" /><Key frame="103" value="-68.2064" /></ActuatorCurve><ActuatorCurve name="value" actuator="LHand" mute="0" unit="1"><Key frame="16" value="0.341458" /></ActuatorCurve><ActuatorCurve name="value" actuator="LShoulderPitch" mute="0" unit="0"><Key frame="11" value="102.04" /><Key frame="82" value="99.1395" /><Key frame="103" value="96.239" /></ActuatorCurve><ActuatorCurve name="value" actuator="LShoulderRoll" mute="0" unit="0"><Key frame="11" value="8.4352" /><Key frame="82" value="9.31412" /><Key frame="103" value="18.0154" /></ActuatorCurve><ActuatorCurve name="value" actuator="LWristYaw" mute="0" unit="0"><Key frame="16" value="-1.93602" /></ActuatorCurve><ActuatorCurve name="value" actuator="RElbowRoll" mute="0" unit="0"><Key frame="11" value="29.8856" /><Key frame="82" value="29.8856" /><Key frame="103" value="31.5555" /></ActuatorCurve><ActuatorCurve name="value" actuator="RElbowYaw" mute="0" unit="0"><Key frame="11" value="103.798" /><Key frame="82" value="111.884" /><Key frame="103" value="95.2722" /></ActuatorCurve><ActuatorCurve name="value" actuator="RHand" mute="0" unit="1"><Key frame="16" value="0.0192993" /></ActuatorCurve><ActuatorCurve name="value" actuator="RShoulderPitch" mute="0" unit="0"><Key frame="11" value="98.2654" /><Key frame="82" value="97.2985" /><Key frame="103" value="98.4411" /></ActuatorCurve><ActuatorCurve name="value" actuator="RShoulderRoll" mute="0" unit="0"><Key frame="11" value="-16.9655" /><Key frame="82" value="-13.2741" /><Key frame="103" value="-10.9889" /></ActuatorCurve><ActuatorCurve name="value" actuator="RWristYaw" mute="0" unit="0"><Key frame="16" value="0.349163" /></ActuatorCurve></ActuatorList></Timeline><Resource name="Standing" type="Lock" timeout="1" /><Resource name="All motors" type="Lock" timeout="1" /></Box><Box name="RPS_Tablet_UI" id="5" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="372" y="456"><bitmap>media/images/box/box-python-script.png</bitmap><script language="4"><content><![CDATA[import urllib
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+        self.tablet = None
+
+    def onLoad(self):
+        try:
+            self.tablet = self.session().service("ALTabletService")
+        except:
+            self.tablet = None
+
+    # Input: onScoreText (String)
+    def onInput_onScoreText(self, text):
+        if not self.tablet:
+            return
+
+        text = str(text)
+
+        html = """
+        <html>
+          <body style="font-family: Arial; text-align:center; margin-top:80px;">
+            <h2>Rock Paper Scissors</h2>
+            <div style="font-size:36px;">{}</div>
+          </body>
+        </html>
+        """.format(text)
+
+        url = "data:text/html;charset=utf-8," + urllib.quote(html)
+        self.tablet.showWebview(url)]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Input name="onScoreText" type="3" type_size="1" nature="1" inner="0" tooltip="" id="4" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="5" /></Box><Box name="Timeline" id="2" localization="8" tooltip="This box is empty (contains a single motion layer with no motor position&#x0A;defined in it) and should be used to create any animation you would like." x="126" y="554"><bitmap>media/images/box/movement/move.png</bitmap><script language="4"><content><![CDATA[]]></content></script><Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" /><Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" /><Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" /><Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" /><Timeline enable="1" fps="25" start_frame="1" end_frame="-1" size="-1"><BehaviorLayer name="behavior_layer1"><BehaviorKeyframe name="keyframe1" index="1"><Diagram /></BehaviorKeyframe></BehaviorLayer></Timeline></Box><Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" /><Link inputowner="11" indexofinput="2" outputowner="3" indexofoutput="9" /><Link inputowner="1" indexofinput="2" outputowner="11" indexofoutput="6" /><Link inputowner="6" indexofinput="2" outputowner="11" indexofoutput="7" /><Link inputowner="7" indexofinput="2" outputowner="11" indexofoutput="8" /><Link inputowner="4" indexofinput="2" outputowner="11" indexofoutput="9" /><Link inputowner="12" indexofinput="2" outputowner="11" indexofoutput="10" /><Link inputowner="14" indexofinput="2" outputowner="11" indexofoutput="11" /><Link inputowner="17" indexofinput="2" outputowner="11" indexofoutput="12" /><Link inputowner="9" indexofinput="2" outputowner="4" indexofoutput="4" /><Link inputowner="11" indexofinput="4" outputowner="9" indexofoutput="5" /><Link inputowner="5" indexofinput="4" outputowner="11" indexofoutput="13" /><Link inputowner="0" indexofinput="4" outputowner="11" indexofoutput="14" /></Diagram></BehaviorKeyframe></BehaviorLayer></Timeline></Box></ChoregrapheProject>

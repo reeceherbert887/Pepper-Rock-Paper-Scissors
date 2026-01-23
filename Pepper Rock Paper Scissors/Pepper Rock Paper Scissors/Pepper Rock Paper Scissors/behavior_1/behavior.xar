@@ -157,7 +157,7 @@ class MyClass(GeneratedClass):
         self.pepperScore = 0
         self.roundsPlayed = 0
         self.draw = 0
-        self.sayText("Fuck You Bitch!")
+        self.sayText("Would you like to play Rock, Paper, Scissors? Best of three. Please say yes or no.")
         self.onStopped()
 
     # Input: onStop (bang)
