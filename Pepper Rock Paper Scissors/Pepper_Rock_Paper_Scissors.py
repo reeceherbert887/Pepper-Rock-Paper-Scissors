@@ -3,18 +3,19 @@ import random
 class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self)
-        self.gameStart = False
-        self.userScore = 0
-        self.pepperScore = 0
-        self.roundsPlayed = 0
+        resetMatch
+        
+
+        def resetMatch(self):
+            self.gameStart = False
+            self.userScore = 0
+            self.pepperScore = 0
+            self.roundsPlayed = 0
 
     # Input: onStart (bang)
     def onInput_onStart(self):
         # Once head sensor is activated, game starts
-        self.gameStart = False
-        self.userScore = 0
-        self.pepperScore = 0
-        self.roundsPlayed = 0
+        self.resetMatch()
         self.sayText("Would you like to play Rock, Paper, Scissors? Best of three. Please say yes or no.")
         self.onStopped()
 
@@ -41,6 +42,12 @@ class MyClass(GeneratedClass):
             else:
                 self.sayText("Please say yes or no.")
                 return
+
+        # Does not go over 2 rounds
+        if self.roundsPlayed >= 3:
+            # If something breaks
+            self.sayText("This match is finished.")
+            return()
 
 
         #Game mode
@@ -75,28 +82,34 @@ class MyClass(GeneratedClass):
             self.doScissors()
 
         # Send to tablet UI
-        scoreLine = "round {}/3 | You: {} - Me: {}".format(self.roundsPlayed, self.userScore, self.pepperScore)
+        scoreLine = "You: {} - Me: {}".format(self.userScore, self.pepperScore)
 
         self.scoreText(scoreLine)
 
-        self.sayText("You chose {}. I chose {}. {} {}".format(user, pepper, outcome, scoreLine))
+        self.sayText("You chose {}. I chose {}. {} {}".format(user, pepper, outcome, ))
 
-         # Check match winner (first to 2 wins)
+        # --- End conditions ---
+        # 1) First to 2 wins (best of three)
         if self.userScore >= 2 or self.pepperScore >= 2:
-            if self.userScore > self.pepperScore:
-                self.sayText("Congratulations! You win the best of three.")
-            else:
-                self.sayText("I win the best of three. Better luck next time.")
-
-            # Reset to invite stage (play again)
-            self.gameStart = False
-            self.userScore = 0
-            self.pepperScore = 0
-            self.roundsPlayed = 0
-
-            self.scoreText("Match finished. Say yes to play again, or no to quit.")
-            self.sayText("Would you like to play again? Please say yes or no.")
+            self._finishMatch()
             return
 
-        # Continue
-        self.sayText("Next round. Please say rock, paper, or scissors.")
+        # 2) Hard cap after 3 rounds (prevents “4th round” after draws)
+        if self.roundsPlayed >= 3:
+            # Decide overall winner (could be draw)
+            if self.userScore > self.pepperScore:
+                self.sayText("You win overall.")
+            elif self.pepperScore > self.userScore:
+                self.sayText("I win overall.")
+            else:
+                self.sayText("It's a draw overall.")
+            self._finishMatch()
+            return
+
+        # Continue prompt (short)
+        self.sayText("Next one. Rock, paper, or scissors?")
+
+    def _finishMatch(self):
+        self.scoreText("Match finished. Say yes to play again, or no to quit.")
+        self.resetMatch()
+        self.sayText("Would you like to play again? Say yes or no.")
